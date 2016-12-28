@@ -32,7 +32,7 @@ class ___FILEBASENAMEASIDENTIFIER___Container: AssemblyType {
         }
         
         container.register(___FILEBASENAMEASIDENTIFIER___Controller.self) {  r in
-            let controller = UIStoryboard.main().instantiateViewController() as! ___FILEBASENAMEASIDENTIFIER___Controller
+            let controller = UIStoryboard.main().instantiateViewController() as ___FILEBASENAMEASIDENTIFIER___Controller
             let presenter = r.resolve(___FILEBASENAMEASIDENTIFIER___PresenterProtocol.self, argument: controller)!
             controller.presenter = presenter
             
